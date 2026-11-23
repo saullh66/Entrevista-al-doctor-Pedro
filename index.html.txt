@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrevista a doctor Pedro Jhoan Salazar Pérez</title>
+    <style>
+      :root {
+        color-scheme: dark light;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #0f172a;
+        color: #f8fafc;
+        padding: 2rem 1rem;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 800px;
+        background: #1e293b;
+        padding: 2.5rem;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 2rem 0;
+        font-size: clamp(1.75rem, 4vw, 2.75rem);
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+        background: linear-gradient(to right, #38bdf8, #818cf8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .videos-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .video-wrapper {
+        width: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+        background: #000;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      video {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 75vh;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Entrevista a doctor Pedro Jhoan Salazar Pérez</h1>
+
+      <div class="videos-list">
+        <!-- Primer video -->
+        <div class="video-wrapper">
+          <video controls preload="metadata">
+            <source src="PEDRO.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <!-- Segundo video -->
+        <div class="video-wrapper">
+          <video controls preload="metadata">
+            <source src="PEDRO2.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
